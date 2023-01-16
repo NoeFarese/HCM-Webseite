@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <script src="mitgliedwerden.js" async></script>
+    <link href="mitgliedwerden.css" rel="stylesheet">
+    <link rel="icon" href="../picture/HCM_Logo_blau_2019.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;1,500&family=Nabla&display=swap"
+        rel="stylesheet">
+    <title>Mitglied werden - HC Malters</title>
+</head>
+
+<body>
+    <div class="headMain">
+        <div class="hcmLogo">
+            <a href="../index.htm"><img src="../picture/HCM_Logo_blau_2019.png"
+                    alt="Dises HCM Logo dient dazu auf die Hauptseite zu springen"></a>
+        </div>
+        <div class="headContainer">
+            <Header class="placehcmLogo">
+
+            </Header>
+            <Header class="titlehcm">
+                <h1 class="titelHCM">HC Malters</h1>
+            </Header>
+            <nav class="mainNav">
+                <a href="../Herren1/herren1.html" class="sideBarButton">Teams</a>
+                <a href="../MitgliedWerden/mitgliedwerden.html" class="sideBarButton">Mitglied werden</a>
+                <a href="../Portrait/portrait.html" class="sideBarButton">Portrait</a>
+
+            </nav>
+        </div>
+    </div>
+
+    <main>
+      
+        <form action="https://formlog.offline.ch/log" method="POST">
+          <div class="completesurvey">
+            <h1>Werde Mitglied des HC Malters!</h1>
+            <div class="Container">
+              <div class="Personalien" id="personalienId">
+                <h2>Personalien</h2>
+                <table>
+                  <tr>
+                    <td>
+                      <label for="vorname">Vorname</label>
+                    </td>
+                    <td>
+                      <input type="text" id="vorname" name="Vorname" required>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="nachname">Nachname</label>
+                    </td>
+                    <td>
+                      <input type="text" id="nachname" name="Nachname" required>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="email">Email</label>
+                    </td>
+                    <td>
+                      <input type="email" id="email" name="email" required>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="adresse">Adresse</label>
+                    </td>
+                    <td>
+                      <input type="text" id="adresse" name="Adresse" required>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="wohnort">Wo wohnen Sie?</label>
+                    </td>
+                    <td>
+                      <input type="text" id="wohnort" name="Wohnort" required>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <label for="telefonnummer">Telefonnummer</label>
+                    </td>
+                    <td>
+                      <input type="tel" id="telefonnummer" name="Telefonnummer" required>
+                    </td>
+                  </tr>
+                </table>
+                
+              </div>
+
+              <div class="manschaftBemerkung" id="manschaftBemerkung">
+                <h2>In welches Team kommst du?</h2>
+                <input type="radio" id="manschaftU9" name="manschaft" value="manschaft U9" required>
+                <label for="manschaftU9">U9</label><br>
+  
+                <input type="radio" id="manschaftU11" name="manschaft" value="manschaft U11">
+                <label for="manschaftU11">U11</label><br>
+  
+                <input type="radio" id="manschaftU13" name="manschaft" value="manschaft U13">
+                <label for="manschaftU13">U13</label><br>
+  
+                <input type="radio" id="manschaftU14" name="manschaft" value="manschaft U14">
+                <label for="manschaftU14">U14</label><br>
+
+                <input type="radio" id="manschaftU15" name="manschaft" value="manschaft U15">
+                <label for="manschaftU15">U15</label>
+  
+                <h2>Bemerkung</h2>
+                <textarea  placeholder="Bemerkung" name="Bemerkung"></textarea>
+                <input type="submit" value="Bestätigen" class="bestbutton">
+              </div>
+            </div>
+            
+          </div>
+        </form>
+        <button onclick="checkInput()" id="buttonWeiter">weiter</button>
+      </main>
+    <footer>
+        <div class="containerFooter">
+            <h3 class="h3Sponsoren">Unsere Hauptsponsoren</h3>
+            <h3 class="unserTv">Unser TV</h3>
+            <h3 class="SocialMedias">Unsere Social Medias</h3>
+            <a href="https://gimalur.ch/"><img src="https://gimalur.ch/wp-content/themes/understrap-child/images/logo/Logo_Gimalur.svg" alt="Button zum Sponsor gimalur" class="GimalurButton"></a>
+            <a href="https://josefkoch.ch/"><img src="../picture/JosefKoch.png" alt="Button zum Sponsor Josef Koch" class="josefKochclass"></a>
+            <a href="https://arena.asport.tv/club/4234/hc-malters"><img src="../picture/Screenshot2022-09-23at13.03.21.png" alt="Button zum TV" class="TVButtonBottom"></a>
+            <div>
+                <a href="https://www.instagram.com/hcmalters/?hl=de" class="fa fa-instagram"></a>
+                <a href="https://www.youtube.com/channel/UCrx8Rqo6ZttuCVSozsCWORA" class="fa fa-youtube"></a>
+                <a href="https://www.facebook.com/hcmalters/" class="fa fa-facebook"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
